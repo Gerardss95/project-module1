@@ -90,10 +90,8 @@ function Enemy(){
   this.health;
   this.position;
 };
-moveForward();
-moveUp();
-moveDown();
-enemyAttack();
+enemy.moveLeft();
+enemy.Attack();
 ```
 ## Links
 [Github] https://github.com/Gerardss95/project-module1
