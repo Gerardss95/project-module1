@@ -1,7 +1,8 @@
 # Space Assassin
 
-You are an expert pilot that has a mission of saving the humanity from an alien invasion. The purpose of the game is killing all the aliens u can.
-The game screen is a dark screen, you are the spaceship at left and you have to kill as much aliens as possible. 
+You are an expert pilot that has a mission of saving the humanity from an alien invasion. The purpose of the game is killing all the aliens you can.
+The game screen is a dark screen, you are the spaceship at left and you have to kill as much aliens as possible. Each second you are alive it counts for the score, and each enemy you kill too.
+
 
 * * *
 ## MVP
