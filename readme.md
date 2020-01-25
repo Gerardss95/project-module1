@@ -100,3 +100,5 @@ moveDown();
 enemyAttack();
 ```
 ## Links
+[Github] https://github.com/Gerardss95/project-module1
+[Project] https://github.com/Gerardss95/project-module1/projects/1?add_cards_query=is%3Aopen
