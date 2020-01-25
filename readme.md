@@ -1,4 +1,4 @@
-# Space Assassin
+# Save humanity
 
 You are an expert pilot that has a mission of saving the humanity from an alien invasion. The purpose of the game is killing all the aliens you can.
 The game screen is a dark screen, you are the spaceship at left and you have to kill as much aliens as possible. Each second you are alive it counts for the score, and each enemy you kill too.
@@ -74,7 +74,7 @@ __Game.js__
 ```javascript
 function Game(options){};
 Game.drawBackground();
-Game.drawPlayer();
+Game.generatePlayer();
 Game.generateEnemies();
 Game.gameOver();
 ```
@@ -82,8 +82,8 @@ __Player.js__
 ```javascript
 function Player(){
   this.health;
-  this.speed();
-  this.position();
+  this.position;
+  
 };
 Player.move();
 Player.attack();
@@ -92,8 +92,7 @@ __Enemy.js__
 ```javascript
 function Enemy(){
   this.health;
-  this.speed;
-  this.position();
+  this.position;
 };
 moveForward();
 moveUp();
