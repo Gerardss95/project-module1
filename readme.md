@@ -76,8 +76,8 @@ Game.drawBackground();
 Game.drawPlayer();
 Game.generateEnemies();
 Game.gameOver();
-Game.init();
-garbageCollector;
+
+
 ```
 __Player.js__
 ```javascript
