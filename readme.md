@@ -43,7 +43,7 @@ Html5 __Canvas__ and Vanilla __Javascript__
 ## BACK LOG
 
 ### Score
-* Run counter and store score on game over and highscore
+* Run counter and store score on highscore
 ### High score
 * Create High Score Screen
 * Show latest score on Start Screen
@@ -76,8 +76,6 @@ Game.drawBackground();
 Game.drawPlayer();
 Game.generateEnemies();
 Game.gameOver();
-
-
 ```
 __Player.js__
 ```javascript
