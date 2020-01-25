@@ -65,10 +65,6 @@ createGameOverScreen(id);
 destroyStartScreen();
 destroyGameScreen();
 destroyGameOverScreen();
-var game = new Game({
-    
-  });
-game.init();
 ```
 __Game.js__
 ```javascript
