@@ -59,17 +59,14 @@ Html5 __Canvas__ and Vanilla __Javascript__
 ## Data structure
 __main.js__
 ```javascript
-createStartScreen(id);
-createGameScreen(id);
-createGameOverScreen(id);
-destroyStartScreen();
-destroyGameScreen();
-destroyGameOverScreen();
+startMenu();
+gameScreen();
+gameOverScreen();
 ```
 __Game.js__
 ```javascript
-function Game(options){};
-Game.drawBackground();
+function Game(){};
+Game.generateBackground();
 Game.generatePlayer();
 Game.generateEnemies();
 Game.gameOver();
