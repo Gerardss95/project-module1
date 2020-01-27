@@ -1,6 +1,6 @@
 canvas#star-killer{
     margin: 0 auto;
-    border: 10px solid cyan;
+    border: 5px solid cyan;
     background-image: url(../IMG/space-pixel-art-horizon-stars-wallpaper-preview.jpg);
     background-size: 100%;
     display: flex;
