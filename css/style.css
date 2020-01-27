@@ -1,0 +1,66 @@
+canvas#star-killer{
+    margin: 0 auto;
+    border: 10px solid cyan;
+    background-image: url(../IMG/space-pixel-art-horizon-stars-wallpaper-preview.jpg);
+    background-size: 100%;
+    display: flex;
+    margin-top: 100px;
+   
+
+}
+
+body{
+    background-color: black;
+}
+
+#logo{
+    position: absolute;
+top: 200px;
+left: 575px;
+width: 500px;
+height: auto;
+}
+.btn {
+    border: none;
+	color: inherit;
+	background: none; 
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 20px;
+	outline: none;
+	margin: 0 auto;
+	position: absolute;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    transition: all 0.3s;
+    top: 475px;
+    left: 700px;
+    width: 250px;
+    height: auto;
+}
+.btn-2 {
+    border: 1px solid yellow;
+	background: transparent;
+	color: yellow;
+	box-shadow: 0 6px yellow;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+.btn-2c {
+	border-radius: 5px;
+}
+.btn-2c:hover {
+	box-shadow: 0 4px yellow;
+    
+   
+}
+.btn-2c:active {
+	box-shadow: 0 0 cyan;
+
+}
