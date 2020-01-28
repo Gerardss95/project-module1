@@ -1,5 +1,8 @@
 let ctx;
 let game;
+const image = new Image();
+image.src = '../IMG/pixel-spaceship-png-1.png'; 
+
 
 document.addEventListener('DOMContentLoaded', (event) =>{
     let canvas = document.getElementById('star-killer');
