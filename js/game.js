@@ -5,8 +5,8 @@ class Game{
     }
 
   _drawSpaceShip(){
-    this.ctx.fillStyle = 'green';  
-    this.ctx.fillRect(50,350,50,50);
+    this.ctx.fillStyle = 'cyan';  
+    this.ctx.fillRect(50,345,50,50);
       
       console.log('works')
   }   
