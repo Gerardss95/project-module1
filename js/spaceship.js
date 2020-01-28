@@ -1,11 +1,16 @@
 class SpaceShip {
-    
-    constructor(){
-      this.x = 
-      this.y =   
-    }
-    const image = new Image();
-    image.src = '../IMG/pixel-spaceship-png-1.png';
+
+  constructor(initialPosition) {
+    this.position = {
+      x: initialPosition.x,
+      y: initialPosition.y
+    };
+
+    this.image = new Image();
+    this.image.src = '../IMG/pixel-spaceship-png-1.png';
+  }
+
+  
 
 
 }

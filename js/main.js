@@ -1,7 +1,6 @@
 let ctx;
 let game;
-const image = new Image();
-image.src = '../IMG/pixel-spaceship-png-1.png';
+
 
 document.addEventListener('DOMContentLoaded', (event) => {
   let canvas = document.getElementById('star-killer');
@@ -10,7 +9,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   let logo = document.getElementById('logo');
 
   ctx = canvas.getContext('2d');
-  game = new Game(ctx);
+  game = new Game(ctx, new SpaceShip({
+    x: 50,
+    y: 310
+  }));
 
   function destroyStartScreen() {
     startBtn.style = 'display: none';
