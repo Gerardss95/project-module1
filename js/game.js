@@ -6,16 +6,14 @@ class Game {
   }
 
   _drawSpaceShip() {
-    //     this.ctx.fillStyle = 'cyan';  
-    //    this.ctx.fillRect(50,345,50,50);
     this.ctx.drawImage(this.spaceShip.image, 0, 0, 375, 375, this.spaceShip.position.x, this.spaceShip.position.y, 100, 100)
   }
-
+  
 
   _mouseMovements() {
     const canvas = document.getElementById("star-killer")
     canvas.addEventListener('mousemove', e => {
-      this.spaceShip.position.y = e.clientY;
+      this.spaceShip.position.y = e.clientY-130;
       console.log(this.spaceShip.position.y);
     });
   }
@@ -35,7 +33,14 @@ class Game {
     this.interval = window.requestAnimationFrame(this.update.bind(this));
     
   };
+  _drawBullet(){
 
+  }
+  shoot(){
+    canvas.addEventListener('click', e=>{
+
+    });
+  }
 
 
 
