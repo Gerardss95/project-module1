@@ -1,8 +1,10 @@
 class Bullet {
-    constructor(spaceShip){
-        this.spaceShip = spaceShip;
-        this.x = this.spaceShip.position.x;
-        this.y = this.spaceShip.position.y;
-        
-    }
+    constructor(initialBullet) {
+        this.x = initialBullet.x + 95;
+        this.y = initialBullet.y + 39;
+
+
+        this.image = new Image();
+        this.image.src = "../IMG/laser.png";
+    };
 }

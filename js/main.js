@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   game = new Game(ctx, new SpaceShip({
     x: 50,
     y: 310
-  }));
+  }), Bullet);
   
 
   function destroyStartScreen() {
@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   startBtn.addEventListener('click', function () {
     destroyStartScreen();
     game.start();
-    
-  })
+    canvas.style.cursor = 'none';
+  });
 })
