@@ -25,7 +25,9 @@ class Game {
   update() {
     this.cleanSpace();
     this._drawSpaceShip();
-    this._drawBullet()
+    
+
+    this._drawBullet();
     if (!!this.interval) {
       this.interval = window.requestAnimationFrame(this.update.bind(this));
     }
@@ -44,7 +46,7 @@ class Game {
     //console.log('bullet', this.bullet);
     if (this.bullet) {
 
-      this.ctx.drawImage(this.bullet.image, 0, 0, 320, 130, this.bullet.x, this.bullet.y, 20, 20);
+      this.ctx.drawImage(this.bullet.image, 0, 0, 320, 130, this.bullet.x+=100, this.bullet.y, 400, 20);
     }
   }
 
