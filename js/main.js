@@ -7,12 +7,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
   let startBtn = document.getElementById('start');
   let music = document.getElementById('music');
   let logo = document.getElementById('logo');
+  let pauseLogo = document.getElementById('pause-screen');
   
   ctx = canvas.getContext('2d');
   game = new Game(ctx, new SpaceShip({
     x: 50,
     y: 310
-  }), Bullet);
+  }), showPause, destroyPause);
   
 
   function destroyStartScreen() {
@@ -21,6 +22,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     logo.style = 'display: none';
     
   }
+  function showPause(){
+    pauseLogo.style = 'display: block';
+
+  }
+  function destroyPause(){
+    pauseLogo.style = 'display: none';
+
+  }
+
   function showGameOver() {
     canvas.style = 'display: none';
     gameover.style = 'display: block';

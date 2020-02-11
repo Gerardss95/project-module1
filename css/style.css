@@ -14,9 +14,15 @@ top: 150px;
 left: 575px;
 width: 500px;
 height: auto;
-
-
 }
+.pause-img {
+    position: absolute;
+    top: 275px;
+    left: 575px;
+    width: 500px;
+    height: auto;
+}
+
 
 body{
     background-color: black;

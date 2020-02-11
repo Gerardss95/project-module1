@@ -1,14 +1,17 @@
 class Game {
-  constructor(ctx, spaceShip) {
+  constructor(ctx, spaceShip, showPause, destroyPause) {
     this.ctx = ctx;
     this.spaceShip = spaceShip;
     this.interval = undefined;
     this.bullet = undefined;
     this.canvas = document.getElementById("star-killer");
-
+    this.paused = false;
     this.enemies = [];
     this.counterEnemies = 0;
     this.intervalEnemy= 30;
+    this.showPause = showPause;
+    this.destroyPause = destroyPause;
+
   }
 
   _drawSpaceShip() {
@@ -47,7 +50,7 @@ class Game {
     this._mouseMovements();
     this.interval = window.requestAnimationFrame(this.update.bind(this));
     this.shoot();
-
+    this._assignControlToPause();
 
 
   //  this._drawEnemies(this.ctx);
@@ -60,6 +63,26 @@ class Game {
       this.ctx.drawImage(this.bullet.image, 0, 0, 320, 130, this.bullet.x+=100, this.bullet.y, 400, 20);
     }
   }
+  _assignControlToPause() {
+    document.addEventListener('keydown', e => {
+      switch (e.keyCode) {
+        case 80: // space bar 
+          this.pause();
+          break;
+      }
+      e.preventDefault();
+    });
+  };
+  pause() {
+    this.paused = !this.paused;  
+    if (this.paused) {
+      window.cancelAnimationFrame(this.interval);
+      this.showPause();
+    } else {
+      this.interval = window.requestAnimationFrame(this.update.bind(this));
+      this.destroyPause();
+    }
+  };
 
   _drawEnemies() {
     this.enemies.forEach((enemy, index) => {
