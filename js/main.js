@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     logo.style = 'display: none';
     
   }
-
+  function showGameOver() {
+    canvas.style = 'display: none';
+    gameover.style = 'display: block';
+  }
   startBtn.addEventListener('click', function () {
     destroyStartScreen();
     game.start();

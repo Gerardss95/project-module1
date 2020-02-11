@@ -9,11 +9,15 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container" style="display: block">
         <canvas id="star-killer" width="1280" height="720"></canvas>
         <button class="btn btn-2 btn-2c" id="start">start</button>
         <img id="logo" src="./IMG/spaceKiller.png" alt="">
       </div>
+      <div id="gameover-screen" style="display: none">
+        <img id="gameover" src="/IMG/gameoverlogo.png" alt="gameover">
+        <button class="btn btn-2 btn-2c">Play Again</button>
+    </div>
       <audio id="music" src="./Sound/star-wars-theme-shitty-flute-version.mp3" autoplay loop> </audio>
     <script src="/js/main.js"></script>
     <script src="/js/game.js" ></script>

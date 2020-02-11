@@ -30,7 +30,7 @@ class Game {
     this.cleanSpace();
     this._drawSpaceShip();
     
-    this._counterEnemies();
+    //this._counterEnemies();
 
 
 
@@ -50,7 +50,7 @@ class Game {
 
 
 
-    this._drawEnemies(this.ctx);
+  //  this._drawEnemies(this.ctx);
   };
 
   _drawBullet() {

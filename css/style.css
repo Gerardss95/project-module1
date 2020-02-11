@@ -8,6 +8,15 @@ canvas#star-killer{
    
 
 }
+#gameover {
+position: absolute;
+top: 150px;
+left: 575px;
+width: 500px;
+height: auto;
+
+
+}
 
 body{
     background-color: black;
