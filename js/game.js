@@ -32,6 +32,8 @@ class Game {
   update() {
     this.cleanSpace();
     this._drawSpaceShip();
+
+    // recorrer el array de enemigos, y por cada uno, dibujarlo y moverlo
     
     //this._counterEnemies();
 
